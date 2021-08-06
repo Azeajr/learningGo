@@ -17,7 +17,6 @@ func main() {
 		fmt.Println("three")
 	}
 
-
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
@@ -33,9 +32,8 @@ func main() {
 		fmt.Println("It's after noon")
 	}
 
-
 	whatAmI := func(i interface{}) {
-		switch t:= i.(type) {
+		switch t := i.(type) {
 		case bool:
 			fmt.Println("I'm a bool")
 		case int:
